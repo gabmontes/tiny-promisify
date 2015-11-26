@@ -1,0 +1,45 @@
+{
+  "name": "tiny-promisify",
+  "version": "0.1.0",
+  "description": "Tiny library to promisify functions expecting node-style callbacks",
+  "keywords": [
+    "promise",
+    "promisify",
+    "callback",
+    "async",
+    "es6",
+    "node"
+  ],
+  "license": "WTFPL",
+  "author": {
+    "name": "Gabriel Montes",
+    "email": "<gabriel@utoctadel.com.ar>"
+  },
+  "main": "index.js",
+  "repository": "gabmontes/tiny-promisify",
+  "scripts": {
+    "test": "mocha $npm_package_config_mocha",
+    "coverage": "istanbul cover _mocha -- $npm_package_config_mocha",
+    "style": "semistandard"
+  },
+  "config": {
+    "mocha": "--reporter spec --ui bdd"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.3",
+    "semistandard": "^7.0.4"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "semistandard": {
+    "globals": [
+      "before",
+      "describe",
+      "it",
+      "after"
+    ]
+  }
+}
