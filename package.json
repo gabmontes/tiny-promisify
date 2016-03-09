@@ -22,6 +22,11 @@
     "coverage": "istanbul cover _mocha -- $npm_package_config_mocha",
     "style": "semistandard"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "config": {
     "mocha": "--reporter spec --ui bdd"
   },
