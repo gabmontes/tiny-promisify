@@ -20,7 +20,7 @@ function fn (args, callback) {
   callback(err, results);
 }
 
-var fnAsync = primisify(fn);
+var fnAsync = promisify(fn);
 fnAsync(args).then(function (result) {
   // your code here...
 }).catch(function (err) {
