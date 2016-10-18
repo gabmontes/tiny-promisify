@@ -41,4 +41,10 @@ Returns a new function that wraps `fn` in a promise.
 
 ## Notes
 
-The module uses native implementations of `Promise` and `Object.assign()`, `node` version 4.0 or higher is required.
+The module uses Babel's polyfills for `Promise` and `Object.assign()` when not found in the current execution environment.
+
+You can require the ES2015 version of the lib by specifying the source file: `require('tiny-promisify/lib')`.
+
+## License
+
+WTFPL
